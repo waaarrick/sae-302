@@ -1,0 +1,139 @@
+/* Sidebar styling */
+#sidebar-nav {
+    width: 160px;
+    background-color: #f27405;
+    padding: 10px;
+}
+
+/* Boutons personnalisés */
+.custom-btn {
+    background-color: #f27405;
+    color: white;
+    border-radius: 10%;
+    display: inline-block;
+    height: 30px;
+    width: 65px;
+    text-align: center;
+    line-height: 30px;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.custom-btn:hover {
+    background-color: #e55b03;
+    transform: scale(1.1);
+}
+
+/* Boutons circulaires */
+.circle-btn {
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    border: 2px solid black;
+    text-align: center;
+    font-size: 14px;
+    transition: transform 0.3s, box-shadow 0.3s, border 0.3s;
+}
+
+.circle-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border: 6px solid #f27405;
+}
+
+.circle-menu {
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    border: 4px solid #f27405;
+    text-align: center;
+    font-size: 14px;
+    z-index: 5;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.circle-menu:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Bouton noir */
+.btn-noir {
+    color: #000;
+    margin: 10px 10px 0 10px;
+    width: 50px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: color 0.3s, transform 0.2s;
+}
+
+.btn-noir:hover {
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Texte */
+.text-content {
+    text-align: justify;
+    line-height: 1.6;
+    margin: 20px 10px;
+    padding: 0 10px;
+}
+
+/* Corps de la page */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.4;
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid {
+    padding: 15px;
+}
+
+/* Vidéo mise en page */
+.video-resize {
+    width: 100%; /* Vidéo occupe 100% de la largeur de son conteneur */
+    max-width: 600px; /* Largeur maximale de 600px pour la vidéo */
+    height: auto; /* Respecte les proportions de la vidéo */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Ombre discrète */
+}
+
+/* Conteneur de la vidéo */
+.col-md-6 {
+    display: flex; /* Active Flexbox */
+    justify-content: flex-start; /* Aligne à gauche (par défaut), mais on le déplace avec ml-auto */
+    align-items: center; /* Centre verticalement */
+    padding-left: 20px; /* Ajoute un peu d'espace à gauche pour ajuster la vidéo */
+}
+
+/* Décaler la vidéo à droite */
+.col-md-6 .video-resize {
+    margin-left: 650px; /* Décale la vidéo vers la droite */
+}
+
+/* Ajustement des colonnes à partir de 768px */
+@media (min-width: 768px) {
+    .col-md-8 {
+        flex: 1 1 60%; /* Le texte prend 60% de la largeur */
+    }
+    
+    .col-md-6 {
+        flex: 1 1 40%; /* La vidéo prend 40% de la largeur */
+    }
+}
